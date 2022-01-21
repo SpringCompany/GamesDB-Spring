@@ -9,7 +9,8 @@ create table generos (
 
 create table companies (
 	cod_company int auto_increment not null,
-    nombre varchar (20) not null,
+    	nombre varchar (20) not null,
+	nacionalidad varchar(20) not null,
 	primary key (cod_company)
 );
 
