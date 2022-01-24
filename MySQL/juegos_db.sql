@@ -34,7 +34,7 @@ create table jugadores (
 	cod_jugador int auto_increment not null,
     avatar varchar(100) not null,
     nombre varchar (30) not null,
-    correo varchar (30) not null,
+    correo varchar (50) not null,
     edad int not null,
     primary key (cod_jugador)
 );
