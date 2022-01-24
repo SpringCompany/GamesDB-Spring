@@ -3,14 +3,14 @@ use `juegos_db`;
 
 create table generos (
 	cod_genero int auto_increment not null,
-    nombre varchar (15) not null,
+    nombre varchar (30) not null,
     primary key (cod_genero)
 );
 
 create table companies (
 	cod_company int auto_increment not null,
-    	nombre varchar (20) not null,
-	nacionalidad varchar(20) not null,
+    nombre varchar (50) not null,
+    nacionalidad varchar(50) not null,
 	primary key (cod_company)
 );
 
@@ -23,6 +23,7 @@ Create table juegos (
     pegi int not null,
     desarrolladora int not null,
     distribuidora int not null,
+    portada varchar(100) not null,
     primary key (cod_juego),
     foreign key (desarrolladora) references companies (cod_company),
 	foreign key (distribuidora) references companies (cod_company),
@@ -31,6 +32,7 @@ Create table juegos (
 
 create table jugadores (
 	cod_jugador int auto_increment not null,
+    avatar varchar(100) not null,
     nombre varchar (30) not null,
     correo varchar (30) not null,
     edad int not null,
