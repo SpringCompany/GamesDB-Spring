@@ -13,7 +13,12 @@ public class Jugadores {
     private Integer edad;
     private Collection<JugadoresJuegos> jugadoresJuegosByCodJugador;
 
+    public Jugadores() {
+
+    }
+
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "cod_jugador", nullable = false)
     public Integer getCodJugador() {
         return codJugador;
@@ -83,5 +88,12 @@ public class Jugadores {
 
     public void setJugadoresJuegosByCodJugador(Collection<JugadoresJuegos> jugadoresJuegosByCodJugador) {
         this.jugadoresJuegosByCodJugador = jugadoresJuegosByCodJugador;
+    }
+
+    public Jugadores(String avatar, String nombre, String correo, Integer edad) {
+        this.avatar = avatar;
+        this.nombre = nombre;
+        this.correo = correo;
+        this.edad = edad;
     }
 }

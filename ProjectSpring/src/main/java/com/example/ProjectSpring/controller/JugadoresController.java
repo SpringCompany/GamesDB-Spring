@@ -1,13 +1,11 @@
 package com.example.ProjectSpring.controller;
 
 import com.example.ProjectSpring.entity.Jugadores;
+import com.example.ProjectSpring.repository.JugadoresAPI;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RestController;
-import com.example.ProjectSpring.repository.JugadoresAPI;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 import java.util.Optional;
@@ -32,5 +30,10 @@ public class JugadoresController {
         } else {
             return new ResponseEntity(jugador.get(), HttpStatus.OK);
         }
+    }
+
+    @PostMapping("/jugador")
+    public Jugadores newJugador(@RequestBody Jugadores jugador) {
+        return jugadoresAPI.save(jugador);
     }
 }
