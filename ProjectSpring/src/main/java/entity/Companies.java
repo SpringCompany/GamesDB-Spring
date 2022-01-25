@@ -15,6 +15,7 @@ public class Companies {
     private Collection<Juegos> juegosByCodCompany_0;
 
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "cod_company", nullable = false)
     public Integer getCodCompany() {
         return codCompany;
