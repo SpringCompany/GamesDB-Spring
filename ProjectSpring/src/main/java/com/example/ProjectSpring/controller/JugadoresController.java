@@ -1,13 +1,13 @@
-package controller;
+package com.example.ProjectSpring.controller;
 
-import entity.Jugadores;
+import com.example.ProjectSpring.entity.Jugadores;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
-import repository.JugadoresAPI;
+import com.example.ProjectSpring.repository.JugadoresAPI;
 
 import java.util.List;
 import java.util.Optional;
@@ -18,13 +18,13 @@ public class JugadoresController {
     JugadoresAPI jugadoresAPI;
 
     // Devolver todos los jugadores
-    @GetMapping("Jugadores")
+    @GetMapping("/jugadores")
     public List<Jugadores> getAllJugadores() {
         return jugadoresAPI.findAll();
     }
 
     // Devolver los jugadores con id pasado por URL.
-    @GetMapping("Jugador/{id}")
+    @GetMapping("/jugador/{id}")
     public ResponseEntity getJugadorID(@PathVariable("id") Integer id) {
         Optional<Jugadores> jugador = jugadoresAPI.findById(id);
         if (jugador.isEmpty()) {

@@ -6,11 +6,11 @@
   <session-factory>
     <property name="connection.url">jdbc:mysql://localhost:3306/juegos_db</property>
     <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
-      <mapping class="entity.Companies"/>
-      <mapping class="entity.Generos"/>
-      <mapping class="entity.Juegos"/>
-      <mapping class="entity.Jugadores"/>
-      <mapping class="entity.JugadoresJuegos"/>
+      <mapping class="com.example.ProjectSpring.entity.Companies"/>
+      <mapping class="com.example.ProjectSpring.entity.Generos"/>
+      <mapping class="com.example.ProjectSpring.entity.Juegos"/>
+      <mapping class="com.example.ProjectSpring.entity.Jugadores"/>
+      <mapping class="com.example.ProjectSpring.entity.JugadoresJuegos"/>
       <!-- <property name="connection.username"/> -->
     <!-- <property name="connection.password"/> -->
 
