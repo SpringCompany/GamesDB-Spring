@@ -1,6 +1,7 @@
-package com.example.ProjectSpring.repository;
+package repository;
 
-import com.example.ProjectSpring.entity.Jugadores;
+
+import entity.Jugadores;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

@@ -1,8 +1,8 @@
-package com.example.ProjectSpring.controller;
+package controller;
 
-import com.example.ProjectSpring.entity.Jugadores;
-import com.example.ProjectSpring.repository.JugadoresAPI;
+import entity.Jugadores;
 import org.springframework.beans.factory.annotation.Autowired;
+import repository.JugadoresAPI;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -12,6 +12,7 @@ import java.util.Optional;
 
 @RestController
 public class JugadoresController {
+
     @Autowired
     JugadoresAPI jugadoresAPI;
 
