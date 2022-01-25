@@ -10,14 +10,13 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
-@RequestMapping("Juegos") //http://localhost:8080/Juegos
+@RequestMapping("/juegos") //http://localhost:8080/Juegos
 public class juegosController {
     @Autowired
     private juegosRepository juegosRepository;
 
     //devolver todos los juegos -> //http://localhost:8080/Juegos
-    /*
-    @GetMapping("Juegos")
+    @GetMapping
     public List<Juegos> devolverJuegosNombrePrecioDesc(@RequestParam(value = "nombre", required = false) String nombre, @RequestParam(value = "precio", required = false) Double precio){
         if(precio == null){
             return juegosRepository.findJuegosByNombreOrderByCodJuegoAsc(nombre);
@@ -28,7 +27,7 @@ public class juegosController {
         }else{
             return juegosRepository.findAllByNombreAndPrecioGreaterThanOrderByPrecioDesc(nombre, precio);
         }
-    }*/
+    }
 
     //devolver todos los juegos con un identificador-> //http://localhost:8080/Juegos{CodJuego}
     @GetMapping("/{CodJuego}")
