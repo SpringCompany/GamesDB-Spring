@@ -20,14 +20,14 @@ public class juegosController {
     //devolver todos los juegos -> //http://localhost:8080/Juegos
     @GetMapping
     public List<Juegos> devolverJuegosNombrePrecioDesc(@RequestParam(value = "nombre", required = false) String nombre, @RequestParam(value = "precio", required = false) Double precio) {
-        if (precio == null) {
+        if(precio == null && nombre != null){
             return juegosRepository.findJuegosByNombreOrderByCodJuegoAsc(nombre);
-        } else if (precio == null && nombre == null) {
-            return juegosRepository.findAll();
-        } else if (nombre == null) {
+        }else if(precio != null && nombre == null){
             return juegosRepository.findJuegosByPrecioOrderByCodJuegoAsc(precio);
-        } else {
+        }else if(nombre != null && precio != null) {
             return juegosRepository.findAllByNombreAndPrecioGreaterThanOrderByPrecioDesc(nombre, precio);
+        }else{
+            return juegosRepository.findAll();
         }
     }
 
