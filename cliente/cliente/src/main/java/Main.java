@@ -9,8 +9,7 @@ import javafx.scene.control.TextArea;
 import javafx.scene.layout.*;
 import javafx.stage.Stage;
 
-import javax.swing.*;
-import java.awt.*;
+
 
 
 public class Main extends Application{
@@ -35,27 +34,6 @@ public class Main extends Application{
         Button bdelete = new Button("DELETE");
         bdelete.setMaxSize(150,50);
 
-        //funciones de botones
-
-        bget.setOnAction(new EventHandler<ActionEvent>() {
-            @Override
-            public void handle(ActionEvent event) {
-                metodos.get();
-            }
-        });
-        bdelete.setOnAction(new EventHandler<ActionEvent>() {
-            @Override
-            public void handle(ActionEvent event) {
-                metodos.delete();
-            }
-        });
-        bpost.setOnAction(new EventHandler<ActionEvent>() {
-            @Override
-            public void handle(ActionEvent event) {
-                metodos.update();
-            }
-        });
-
 
         //colocacion
 
@@ -73,6 +51,33 @@ public class Main extends Application{
         text.setWrapText(true);
 
         borderPane.setCenter(text);
+
+        //funciones de botones
+
+        bget.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                metodos.get(text);
+            }
+        });
+        bdelete.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                metodos.delete(text);
+            }
+        });
+        bpost.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                metodos.post(text);
+            }
+        });
+        bupdate.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                metodos.update(text);
+            }
+        });
 
         Scene scene = new Scene(borderPane,700,600);
         primaryStage.setScene(scene);
