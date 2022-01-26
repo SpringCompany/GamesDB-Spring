@@ -16,7 +16,6 @@ public class Jugadores {
     private Collection<JugadoresJuegos> jugadoresJuegosByCodJugador;
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "cod_jugador", nullable = false)
     public Integer getCodJugador() {
         return codJugador;
