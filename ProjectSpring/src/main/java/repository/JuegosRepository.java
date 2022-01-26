@@ -5,7 +5,7 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 @Repository
-public interface JuegosRepository extends JpaRepository<Juegos, Integer> {
+public interface juegosRepository extends JpaRepository<Juegos, Integer> {
     List<Juegos> findAllByNombreAndPrecioGreaterThanOrderByPrecioDesc(String nombre, double precio);
     List<Juegos> findJuegosByNombreOrderByCodJuegoAsc(String nombre);
     List<Juegos> findJuegosByPrecioOrderByCodJuegoAsc(double precio);
