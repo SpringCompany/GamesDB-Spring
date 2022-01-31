@@ -71,7 +71,8 @@ public class Jugadores {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Jugadores jugadores = (Jugadores) o;
-        return Objects.equals(codJugador, jugadores.codJugador) && Objects.equals(avatar, jugadores.avatar) && Objects.equals(nombre, jugadores.nombre) && Objects.equals(correo, jugadores.correo) && Objects.equals(edad, jugadores.edad);
+        return Objects.equals(codJugador, jugadores.codJugador) && Objects.equals(avatar, jugadores.avatar) && Objects.equals(nombre,
+                jugadores.nombre) && Objects.equals(correo, jugadores.correo) && Objects.equals(edad, jugadores.edad);
     }
 
     @Override

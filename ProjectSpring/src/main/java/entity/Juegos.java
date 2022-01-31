@@ -86,7 +86,8 @@ public class Juegos {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Juegos juegos = (Juegos) o;
-        return Objects.equals(codJuego, juegos.codJuego) && Objects.equals(nombre, juegos.nombre) && Objects.equals(fechaLanzamiento, juegos.fechaLanzamiento) && Objects.equals(precio, juegos.precio) && Objects.equals(pegi, juegos.pegi) && Objects.equals(portada, juegos.portada);
+        return Objects.equals(codJuego, juegos.codJuego) && Objects.equals(nombre, juegos.nombre) && Objects.equals(fechaLanzamiento,
+                juegos.fechaLanzamiento) && Objects.equals(precio, juegos.precio) && Objects.equals(pegi, juegos.pegi) && Objects.equals(portada, juegos.portada);
     }
 
     @Override
