@@ -19,12 +19,12 @@ import java.util.Optional;
 
 
 @RestController
-@RequestMapping("Juegos") //http://localhost:8080/Juegos
+@RequestMapping("juegos") //http://localhost:8080/juegos
 public class JuegosController {
     @Autowired
     private JuegosRepository juegosRepository;
 
-    //Devolver todos los juegos -> //http://localhost:8080/Juegos
+    //Devolver todos los juegos -> //http://localhost:8080/juegos
     @Operation(summary = "Returns a game filtered by price and/or name or if both are null complete list")
     @ApiResponses(value = {@ApiResponse(responseCode = "200", description = "Game Found", content = {@Content(mediaType = "application" +
             "/json", schema = @Schema(implementation = Book.class))}), @ApiResponse(responseCode = "400", description = "Invalid - " +
@@ -45,7 +45,7 @@ public class JuegosController {
         }
     }
 
-    //Devolver juego con identificador -> //http://localhost:8080/Juegos/{CodJuego}
+    //Devolver juego con identificador -> //http://localhost:8080/juegos/{CodJuego}
     @Operation(summary = "Returns a game filtered by code")
     @ApiResponses(value = {@ApiResponse(responseCode = "200", description = "Game Found", content = {@Content(mediaType = "application" +
             "/json", schema = @Schema(implementation = Book.class))}), @ApiResponse(responseCode = "400", description = "Invalid - " +
@@ -57,7 +57,7 @@ public class JuegosController {
         return juegosRepository.findById(idJuego);
     }
 
-    //insertar un juego nuevo -> http://localhost:8080/Juegos
+    //insertar un juego nuevo -> http://localhost:8080/juegos
     @Operation(summary = "Insert a Game")
     @ApiResponses(value = {@ApiResponse(responseCode = "200", description = "Game Inserted", content = {@Content(mediaType = "application" +
             "/json", schema = @Schema(implementation = Book.class))}), @ApiResponse(responseCode = "400", description = "Invalid - " +
@@ -70,7 +70,7 @@ public class JuegosController {
         return saveJuego.getCodJuego();
     }
 
-    //borrar un juego -> http://localhost:8080/Juegos/{CodJuego}
+    //borrar un juego -> http://localhost:8080/juegos/{CodJuego}
     @Operation(summary = "Delete a Game by Code")
     @ApiResponses(value = {@ApiResponse(responseCode = "200", description = "Game Found And " + "Deleted", content = {@Content(mediaType
             = "application/json", schema = @Schema(implementation = Book.class))}), @ApiResponse(responseCode = "400", description =
@@ -87,7 +87,7 @@ public class JuegosController {
         return new ResponseEntity<ErrorException>(new ErrorException("Se ha borrado " + "correctamente", idJuego), HttpStatus.OK);
     }
 
-    //modificar un juego -> http://localhost:8080/Juegos -> http://localhost:8080/Juegos/{CodJuego}
+    //modificar un juego -> http://localhost:8080/juegos -> http://localhost:8080/Juegos/{CodJuego}
     @Operation(summary = "Updates a Game by Code")
     @ApiResponses(value = {@ApiResponse(responseCode = "200", description = "Game Found and " + "Updated", content = {@Content(mediaType
             = "application/json", schema = @Schema(implementation = Book.class))}), @ApiResponse(responseCode = "400", description =
