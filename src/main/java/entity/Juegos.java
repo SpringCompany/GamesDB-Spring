@@ -20,8 +20,22 @@ public class Juegos {
     private Companies companiesByDistribuidora;
     private Collection<JugadoresJuegos> jugadoresJuegosByCodJuego;
 
+    public Juegos(String nombre, Date fechaLanzamiento, Double precio, Integer pegi, String portada, Generos generosByGenero, Companies companiesByDesarrolladora, Companies companiesByDistribuidora) {
+        this.nombre = nombre;
+        this.fechaLanzamiento = fechaLanzamiento;
+        this.precio = precio;
+        this.pegi = pegi;
+        this.portada = portada;
+        this.generosByGenero = generosByGenero;
+        this.companiesByDesarrolladora = companiesByDesarrolladora;
+        this.companiesByDistribuidora = companiesByDistribuidora;
+    }
+
+    public Juegos() {
+
+    }
+
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "cod_juego", nullable = false)
     public Integer getCodJuego() {
         return codJuego;
@@ -86,8 +100,7 @@ public class Juegos {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Juegos juegos = (Juegos) o;
-        return Objects.equals(codJuego, juegos.codJuego) && Objects.equals(nombre, juegos.nombre) && Objects.equals(fechaLanzamiento,
-                juegos.fechaLanzamiento) && Objects.equals(precio, juegos.precio) && Objects.equals(pegi, juegos.pegi) && Objects.equals(portada, juegos.portada);
+        return Objects.equals(codJuego, juegos.codJuego) && Objects.equals(nombre, juegos.nombre) && Objects.equals(fechaLanzamiento, juegos.fechaLanzamiento) && Objects.equals(precio, juegos.precio) && Objects.equals(pegi, juegos.pegi) && Objects.equals(portada, juegos.portada);
     }
 
     @Override

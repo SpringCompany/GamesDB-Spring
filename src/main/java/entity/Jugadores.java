@@ -15,8 +15,18 @@ public class Jugadores {
     private Integer edad;
     private Collection<JugadoresJuegos> jugadoresJuegosByCodJugador;
 
+    public Jugadores(String avatar, String nombre, String correo, Integer edad) {
+        this.avatar = avatar;
+        this.nombre = nombre;
+        this.correo = correo;
+        this.edad = edad;
+    }
+
+    public Jugadores() {
+
+    }
+
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "cod_jugador", nullable = false)
     public Integer getCodJugador() {
         return codJugador;
@@ -71,8 +81,7 @@ public class Jugadores {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Jugadores jugadores = (Jugadores) o;
-        return Objects.equals(codJugador, jugadores.codJugador) && Objects.equals(avatar, jugadores.avatar) && Objects.equals(nombre,
-                jugadores.nombre) && Objects.equals(correo, jugadores.correo) && Objects.equals(edad, jugadores.edad);
+        return Objects.equals(codJugador, jugadores.codJugador) && Objects.equals(avatar, jugadores.avatar) && Objects.equals(nombre, jugadores.nombre) && Objects.equals(correo, jugadores.correo) && Objects.equals(edad, jugadores.edad);
     }
 
     @Override
