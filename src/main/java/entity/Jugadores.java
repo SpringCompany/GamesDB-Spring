@@ -28,6 +28,7 @@ public class Jugadores {
 
     @Id
     @Column(name = "cod_jugador", nullable = false)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     public Integer getCodJugador() {
         return codJugador;
     }
