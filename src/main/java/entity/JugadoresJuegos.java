@@ -5,7 +5,6 @@ import java.io.Serializable;
 import java.util.Objects;
 
 @Entity
-@Table(name = "jugadores_juegos", schema = "juegos_db", catalog = "")
 //@IdClass(JugadoresJuegosPK.class)
 public class JugadoresJuegos implements Serializable {
     private Integer codJugador;
