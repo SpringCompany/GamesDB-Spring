@@ -14,6 +14,7 @@ public class Generos {
 
     @Id
     @Column(name = "cod_genero", nullable = false)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     public Integer getCodGenero() {
         return codGenero;
     }

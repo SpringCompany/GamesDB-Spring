@@ -91,7 +91,7 @@ public class Jugadores {
     }
 
     @JsonIgnore
-    @OneToMany(mappedBy = "jugadoresByCodJugador")
+    @OneToMany(mappedBy = "jugadoresByCodJugador", orphanRemoval = true)
     public Collection<JugadoresJuegos> getJugadoresJuegosByCodJugador() {
         return jugadoresJuegosByCodJugador;
     }

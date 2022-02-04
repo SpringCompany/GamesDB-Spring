@@ -143,7 +143,7 @@ public class Juegos {
     }
 
     @JsonIgnore
-    @OneToMany(mappedBy = "juegosByCodJuego")
+    @OneToMany(mappedBy = "juegosByCodJuego", orphanRemoval = true)
     public Collection<JugadoresJuegos> getJugadoresJuegosByCodJuego() {
         return jugadoresJuegosByCodJuego;
     }
