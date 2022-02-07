@@ -44,27 +44,56 @@ insert into jugadores (avatar, nombre, correo, edad) values ('https://robohash.o
 insert into jugadores (avatar, nombre, correo, edad) values ('https://robohash.org/impeditsimiliqueest.png?size=50x50&set=set1', 'ddeandreis17', 'rcostell17@google.de', 50);
 insert into jugadores (avatar, nombre, correo, edad) values ('https://robohash.org/providentlaboriosamsunt.png?size=50x50&set=set1', 'ablankenship18', 'bgoodlud18@businessinsider.com', 84);
 insert into jugadores (avatar, nombre, correo, edad) values ('https://robohash.org/dolorarchitectoomnis.png?size=50x50&set=set1', 'aremirez19', 'mstacy19@twitpic.com', 44);
-insert into jugadores (avatar, nombre, correo, edad) values ('https://robohash.org/laborumaliastempore.png?size=50x50&set=set1', 'rruecastle1a', 'pchesley1a@wikia.com', 84);
-insert into jugadores (avatar, nombre, correo, edad) values ('https://robohash.org/delenitieiusquia.png?size=50x50&set=set1', 'lhuitson1b', 'mgolson1b@yahoo.co.jp', 64);
-insert into jugadores (avatar, nombre, correo, edad) values ('https://robohash.org/nihilcorporisperferendis.png?size=50x50&set=set1', 'jreddin1c', 'rwabb1c@phoca.cz', 63);
-insert into jugadores (avatar, nombre, correo, edad) values ('https://robohash.org/evenietrationeeum.png?size=50x50&set=set1', 'vwinyard1d', 'esackler1d@nih.gov', 38);
-insert into jugadores (avatar, nombre, correo, edad) values ('https://robohash.org/utlaboreaut.png?size=50x50&set=set1', 'tknatt1e', 'lcolliver1e@prnewswire.com', 74);
-insert into jugadores (avatar, nombre, correo, edad) values ('https://robohash.org/suntaliassed.png?size=50x50&set=set1', 'cfaloon1f', 'nmounsey1f@t.co', 54);
-insert into jugadores (avatar, nombre, correo, edad) values ('https://robohash.org/velitomnisconsequatur.png?size=50x50&set=set1', 'amcaw1g', 'dbranford1g@mtv.com', 10);
-insert into jugadores (avatar, nombre, correo, edad) values ('https://robohash.org/quiareiciendisdebitis.png?size=50x50&set=set1', 'fhanigan1h', 'dkeable1h@craigslist.org', 69);
-insert into jugadores (avatar, nombre, correo, edad) values ('https://robohash.org/quisequiquas.png?size=50x50&set=set1', 'eateridge1i', 'fspellsworth1i@bing.com', 11);
-insert into jugadores (avatar, nombre, correo, edad) values ('https://robohash.org/autofficiisullam.png?size=50x50&set=set1', 'idomotor1j', 'btorrie1j@utexas.edu', 73);
-insert into jugadores (avatar, nombre, correo, edad) values ('https://robohash.org/veritatisfugiatquo.png?size=50x50&set=set1', 'aoene1k', 'cgoldsack1k@businessinsider.com', 96);
-insert into jugadores (avatar, nombre, correo, edad) values ('https://robohash.org/mollitiasedmagni.png?size=50x50&set=set1', 'agirardini1l', 'carrighini1l@sina.com.cn', 68);
-insert into jugadores (avatar, nombre, correo, edad) values ('https://robohash.org/dolorumperferendisminus.png?size=50x50&set=set1', 'jchrister1m', 'mhoulahan1m@google.nl', 50);
-insert into jugadores (avatar, nombre, correo, edad) values ('https://robohash.org/ducimusnesciuntrerum.png?size=50x50&set=set1', 'mnapolitano1n', 'sgeator1n@google.com', 18);
-insert into jugadores (avatar, nombre, correo, edad) values ('https://robohash.org/autquidemquis.png?size=50x50&set=set1', 'avasile1o', 'itwiddle1o@google.com.hk', 41);
-insert into jugadores (avatar, nombre, correo, edad) values ('https://robohash.org/numquamaccusamusaut.png?size=50x50&set=set1', 'wpickburn1p', 'cficken1p@ca.gov', 90);
-insert into jugadores (avatar, nombre, correo, edad) values ('https://robohash.org/quiaexpeditadolorem.png?size=50x50&set=set1', 'vswayne1q', 'mziehms1q@ustream.tv', 58);
-insert into jugadores (avatar, nombre, correo, edad) values ('https://robohash.org/rerumminusconsectetur.png?size=50x50&set=set1', 'bseywood1r', 'ehinstock1r@apache.org', 97);
-insert into jugadores (avatar, nombre, correo, edad) values ('https://robohash.org/dignissimoseligendivelit.png?size=50x50&set=set1', 'dtallent1s', 'bdessaur1s@people.com.cn', 82);
-insert into jugadores (avatar, nombre, correo, edad) values ('https://robohash.org/minusprovidentnesciunt.png?size=50x50&set=set1', 'caharoni1t', 'gcordery1t@tinypic.com', 89);
-insert into jugadores (avatar, nombre, correo, edad) values ('https://robohash.org/ducimusquoanimi.png?size=50x50&set=set1', 'rdrohane1u', 'lrankin1u@purevolume.com', 15);
+insert into jugadores (avatar, nombre, correo, edad)
+values ('https://robohash.org/laborumaliastempore.png?size=50x50&set=set1', 'rruecastle1a', 'pchesley1a@wikia.com', 84);
+insert into jugadores (avatar, nombre, correo, edad)
+values ('https://robohash.org/delenitieiusquia.png?size=50x50&set=set1', 'lhuitson1b', 'mgolson1b@yahoo.co.jp', 64);
+insert into jugadores (avatar, nombre, correo, edad)
+values ('https://robohash.org/nihilcorporisperferendis.png?size=50x50&set=set1', 'jreddin1c', 'rwabb1c@phoca.cz', 63);
+insert into jugadores (avatar, nombre, correo, edad)
+values ('https://robohash.org/evenietrationeeum.png?size=50x50&set=set1', 'vwinyard1d', 'esackler1d@nih.gov', 38);
+insert into jugadores (avatar, nombre, correo, edad)
+values ('https://robohash.org/utlaboreaut.png?size=50x50&set=set1', 'tknatt1e', 'lcolliver1e@prnewswire.com', 74);
+insert into jugadores (avatar, nombre, correo, edad)
+values ('https://robohash.org/suntaliassed.png?size=50x50&set=set1', 'cfaloon1f', 'nmounsey1f@t.co', 54);
+insert into jugadores (avatar, nombre, correo, edad)
+values ('https://robohash.org/velitomnisconsequatur.png?size=50x50&set=set1', 'amcaw1g', 'dbranford1g@mtv.com', 10);
+insert into jugadores (avatar, nombre, correo, edad)
+values ('https://robohash.org/quiareiciendisdebitis.png?size=50x50&set=set1', 'fhanigan1h', 'dkeable1h@craigslist.org',
+        69);
+insert into jugadores (avatar, nombre, correo, edad)
+values ('https://robohash.org/quisequiquas.png?size=50x50&set=set1', 'eateridge1i', 'fspellsworth1i@bing.com', 11);
+insert into jugadores (avatar, nombre, correo, edad)
+values ('https://robohash.org/autofficiisullam.png?size=50x50&set=set1', 'idomotor1j', 'btorrie1j@utexas.edu', 73);
+insert into jugadores (avatar, nombre, correo, edad)
+values ('https://robohash.org/veritatisfugiatquo.png?size=50x50&set=set1', 'aoene1k', 'cgoldsk@businessinsider.com',
+        96);
+insert into jugadores (avatar, nombre, correo, edad)
+values ('https://robohash.org/mollitiasedmagni.png?size=50x50&set=set1', 'agirardini1l', 'carrighini1l@sina.com.cn',
+        68);
+insert into jugadores (avatar, nombre, correo, edad)
+values ('https://robohash.org/dolorumperferendisminus.png?size=50x50&set=set1', 'jchrister1m', 'mhoulahan1m@google.nl',
+        50);
+insert into jugadores (avatar, nombre, correo, edad)
+values ('https://robohash.org/ducimusnesciuntrerum.png?size=50x50&set=set1', 'mnapolitano1n', 'sgeator1n@google.com',
+        18);
+insert into jugadores (avatar, nombre, correo, edad)
+values ('https://robohash.org/autquidemquis.png?size=50x50&set=set1', 'avasile1o', 'itwiddle1o@google.com.hk', 41);
+insert into jugadores (avatar, nombre, correo, edad)
+values ('https://robohash.org/numquamaccusamusaut.png?size=50x50&set=set1', 'wpickburn1p', 'cficken1p@ca.gov', 90);
+insert into jugadores (avatar, nombre, correo, edad)
+values ('https://robohash.org/quiaexpeditadolorem.png?size=50x50&set=set1', 'vswayne1q', 'mziehms1q@ustream.tv', 58);
+insert into jugadores (avatar, nombre, correo, edad)
+values ('https://robohash.org/rerumminusconsectetur.png?size=50x50&set=set1', 'bseywood1r', 'ehinstock1r@apache.org',
+        97);
+insert into jugadores (avatar, nombre, correo, edad)
+values ('https://robohash.org/dignissimoseligendivelit.png?size=50x50&set=set1', 'dtallent1s',
+        'bdessaur1s@people.com.cn', 82);
+insert into jugadores (avatar, nombre, correo, edad)
+values ('https://robohash.org/minusprovidentnesciunt.png?size=50x50&set=set1', 'caharoni1t', 'gcordery1t@tinypic.com',
+        89);
+insert into jugadores (avatar, nombre, correo, edad)
+values ('https://robohash.org/ducimusquoanimi.png?size=50x50&set=set1', 'rdrohane1u', 'lrankin1u@purevolume.com', 15);
 insert into jugadores (avatar, nombre, correo, edad) values ('https://robohash.org/eosearumdolores.png?size=50x50&set=set1', 'awynne1v', 'mskahill1v@csmonitor.com', 15);
 insert into jugadores (avatar, nombre, correo, edad) values ('https://robohash.org/autfacilisvel.png?size=50x50&set=set1', 'neary1w', 'zdealy1w@oracle.com', 64);
 insert into jugadores (avatar, nombre, correo, edad) values ('https://robohash.org/adipiscialiasveritatis.png?size=50x50&set=set1', 'tlassey1x', 'asweetzer1x@toplist.cz', 40);
