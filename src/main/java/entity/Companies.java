@@ -16,6 +16,7 @@ public class Companies {
 
     @Id
     @Column(name = "cod_company", nullable = false)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     public Integer getCodCompany() {
         return codCompany;
     }

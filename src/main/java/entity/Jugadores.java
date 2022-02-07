@@ -48,7 +48,7 @@ public class Jugadores {
     }
 
     @Basic
-    @Column(name = "nombre", nullable = false, length = 30)
+    @Column(name = "nombre", nullable = false, length = 50)
     public String getNombre() {
         return nombre;
     }
@@ -91,7 +91,7 @@ public class Jugadores {
     }
 
     @JsonIgnore
-    @OneToMany(mappedBy = "jugadoresByCodJugador")
+    @OneToMany(mappedBy = "jugadoresByCodJugador", orphanRemoval = true)
     public Collection<JugadoresJuegos> getJugadoresJuegosByCodJugador() {
         return jugadoresJuegosByCodJugador;
     }
